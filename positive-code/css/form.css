@@ -1,0 +1,119 @@
+#form{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;      
+    flex-flow: column wrap;
+    align-items: center;
+}
+#form-content{
+    background-color: black;
+    border-radius: 30px;
+    width: 35%;
+    height: 350px;
+}
+#form-content h3{
+    margin-top: 10px;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+
+#form-content form span{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+#form-content form span input{
+    border-radius: 3px;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: white;
+    color: white;
+    min-height: 35px;
+    font-size: 15px;
+}
+.form-1{
+    width: 45%;
+    padding-left: 10px;
+}
+.form-2{
+    width: 93%;
+    padding-left: 10px;
+}
+#form-content form span input:focus{
+    border-color: white;
+}
+.form-3{
+    width: 93%;
+    padding-left: 10px;
+    border-radius: 3px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;    
+}
+.form-3:focus{
+    border-color: white;
+}
+.form-button{
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 20px;
+    width: 93%;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+.form-button:hover{
+    background-color: gray;
+    border-color: gray;
+    color: white;
+}
+@media screen and (max-width: 1230px){
+    #form-content{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 939px){
+    #form-content{
+        width: 43%;
+    }
+}
+@media screen and (max-width: 858px){
+    #form-content{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 800px){
+    #form-content{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 740px){
+    #form-content{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 629px){
+    #form-content{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 485px){
+    #form-content{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 439px){
+    #form-content{
+        width: 100%;    
+    }
+    .form-button{
+        margin-left: 15px;
+    }
+}

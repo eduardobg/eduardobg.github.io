@@ -1,0 +1,53 @@
+#main-picture{
+    background-image: url(../img/developer2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 800px;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+#main-picture h1{    
+    font-size: 70px;   
+}
+
+@media screen and (max-width: 1145px){
+    #main-picture h1{
+        font-size: 50px; 
+    }
+}
+@media screen and (max-width: 858px){
+    #main-picture{
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    #main-picture h1{
+        font-size: 40px; 
+    }    
+}
+@media screen and (max-width: 640px){
+    #main-picture{
+        height: 350px;        
+    }
+    #main-picture h1{
+        font-size: 30px; 
+    }    
+}
+@media screen and (max-width: 499px){
+    #main-picture{
+        height: 250px;
+    }
+    #main-picture h1{        
+        font-size: 25px; 
+    }
+}
+@media screen and (max-width: 400px){
+    #main-picture h1{        
+        font-size: 20px; 
+    }
+}

@@ -1,0 +1,57 @@
+#estadistics{
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+.scroll-effect{
+    opacity: 0;
+    transition: all 1.5s;
+}
+.icon{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.icon img{
+   margin-left: 35%;
+}
+
+.icon > h4:last-child{
+    display: none;
+}
+
+.icon h3,
+.icon h4{
+    text-align: center;
+}
+.icon h4{
+    font-size: 15px;
+}
+@media screen and (max-width: 640px){
+    #estadistics .icon:first-child > img,
+    #estadistics .icon:last-child > img {
+        margin-left: 5%;
+    }
+
+    .icon > h4:nth-child(3),
+    .icon > h4:nth-child(4){
+        display: none;
+    }
+    .icon > h4:last-child{
+        display:block;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 499px){
+    #estadistics .icon:nth-child(2) > img{
+        margin-left: 18%;
+    }
+}
+@media screen and (max-width: 400px){
+    .icon{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

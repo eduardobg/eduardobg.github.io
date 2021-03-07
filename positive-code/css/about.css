@@ -1,0 +1,120 @@
+#about{
+    margin-top: 30px;
+    width: 100%;       
+    display: flex;
+    justify-content: center;
+}
+#about-img{   
+    /*min-height: 600px; */
+    background-image: url(../img/dev-animado.gif);
+    background-size: 100% 100%;
+    min-height: 600px;
+    width: 55%; 
+}
+#msg-hidden{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;    
+    justify-content: flex-end;
+    opacity: 0;
+}
+#msg-p-hidden{
+    color: ivory;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+#about-msg{
+    background-color: #6745B9;
+    box-shadow: 3px 0px 3px darkgrey;
+    min-height: 600px;
+    width: 20%;
+    border-radius: 0px 40px 40px 0px;   
+}
+.scroll-ef-about{
+    opacity: 0;
+    transition: all 1.5s;
+    min-height: 600px;
+    display: flex;
+    flex-flow: row wrap;    
+    align-items: center;
+}
+#msg-title{
+    color: ivory;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-align: center;
+    user-select: none;    
+}
+#msg-p{
+    margin-top: -60%;    
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    color: white;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+}
+
+@media screen and (max-width: 1249px){
+    #about-img{
+        width: 50%;
+    }
+    #about-msg{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1050px){
+    #about-img{
+        width: 60%;
+    }
+    #about-msg{
+        width: 25%;
+    }
+}
+@media screen and (max-width: 939px){
+    #about-img{
+        width: 62%;
+    }
+    #about-msg{
+        width: 29%;
+    }
+}
+@media screen and (max-width: 858px){
+    #about-img{
+        width: 65%;
+    }
+    #about-msg{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 740px){
+    #about-img{
+        width: 95%;
+    }
+    #about-msg{    
+        display: none;
+    }
+    #msg-hidden{
+        opacity: 1;
+    }
+
+}
+@media screen and (max-width: 629px){
+    #about-img{
+        width: 100%;
+        min-height: 450px;
+    } 
+}
+@media screen and (max-width: 400px){
+    #about-img{
+        min-height: 380px;
+    } 
+}

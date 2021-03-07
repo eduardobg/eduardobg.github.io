@@ -1,0 +1,25 @@
+footer{
+    width: 100%;
+    margin-top: 40px;
+    background-color: gray;
+    min-height: 100px;
+}
+.social,
+.social2{
+    user-select: none;
+    text-align: center;    
+}
+.social span{
+    display: inline-block;
+    font-size: 40px;    
+    font-family: social-media;
+    cursor: pointer;
+    transition: all 150ms;    
+}
+.social span:hover{
+    font-size: 50px;
+    /*transform: (1.5);*/
+}
+.social2{
+    margin-top: 5px;
+}
