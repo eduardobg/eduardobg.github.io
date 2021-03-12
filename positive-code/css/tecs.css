@@ -35,7 +35,8 @@
     transition: all 500ms linear;
 }
 
-.tec:hover .tec-img{
+/*.tec:hover .tec-img,*/
+.tec-img.accion{
     transform: translate(0,-350px);
     -webkit-transform: translate(0,-350px);
     -o-transform: translate(0,-350px); 
@@ -62,13 +63,17 @@
     cursor: pointer;
     transition: all 150ms linear;
 }
-.more-info-btn:hover{
+.more-info-btn{
+    background-color: blanchedalmond;
+}
+.more-info-btn:hover,
+.more-info-btn.change{
     transform: scale(1.2, 1.2);
     border-color: darkgreen;
     background-color: rgb(15, 177, 15);
     color: white;
     font-weight: bold;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px black;    
 }
 .hidden-message{
     z-index: 1;    
@@ -85,7 +90,9 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-.tec:hover .hidden-message{    
+
+/*.tec:hover .hidden-message,*/
+.hidden-message.accion{    
     transform: translate(0,-350px);
     -webkit-transform: translate(0,-350px);
     -o-transform: translate(0,-350px); 

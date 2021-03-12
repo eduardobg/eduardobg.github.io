@@ -6,6 +6,19 @@ header{
     padding-right: 5%;
     padding-top: 35px;
     padding-bottom: 25px;
+    display: block;
+}
+#header.fijar{
+    position: fixed;
+    width: 100%;
+    z-index: 600;
+}
+#helper1{
+    display: none;
+    height: 160px;
+}
+#helper1.mostrar{
+    display: block;
 }
 #highter-menu{
    text-align: end;
@@ -20,6 +33,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 #logo{
     margin-left: 15px;   
 }
@@ -81,7 +95,8 @@ ul.show{
         background-color: #414141;
         top: -100vh;/*Lo sacamos hacia arriba*/      
         transition: all .4s;
-        flex-direction: column;   
+        flex-direction: column;
+        z-index: 500;   
         
     }
     .menu_items li{         
@@ -108,10 +123,13 @@ ul.show{
 /*Revisarlo*/
 @media screen and (max-width: 858px) and (orientation: landscape){
     .menu_items li{
-        margin: 5px 0 0 0;
-    } 
-    .menu_items{
-        overflow-y: scroll;/*Para poder deslizar*/
+        margin: 1px 0 0 0;
+    }
+    .menu_items li a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .menu_items{       
         height: 100vh;
     }
 }
