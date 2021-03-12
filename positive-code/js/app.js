@@ -1,5 +1,7 @@
 addEventListener('DOMContentLoaded',()=>{ 
 
+    const menu_items = document.querySelector('.menu_items')
+
     const btn_menu = document.querySelector('.btn_menu')
     
     const header = document.querySelector('#header')
@@ -10,11 +12,11 @@ addEventListener('DOMContentLoaded',()=>{
     const tec = document.querySelectorAll('.tec-img')
     const hidden = document.querySelectorAll('.hidden-message')
 
-    if(btn_menu){   
-        btn_menu.addEventListener('click',()=>{
-            const menu_items = document.querySelector('.menu_items')
-            menu_items.classList.toggle('show') //Es un boton con dos funciones
+    const menu_enlace = document.querySelectorAll('.menu_items li a')
 
+    if(btn_menu){   
+        btn_menu.addEventListener('click',()=>{    
+            menu_items.classList.toggle('show') //Es un boton con dos funciones
             header.classList.toggle('fijar')
             helper1.classList.toggle('mostrar')
         })
@@ -30,5 +32,13 @@ addEventListener('DOMContentLoaded',()=>{
             
         })
     })    
+
+    menu_enlace.forEach((elem) =>{
+        elem.addEventListener('click', ()=>{
+            menu_items.classList.remove('show')
+            header.classList.remove('fijar')
+            helper1.classList.remove('mostrar')
+        })   
+    })
   
 })
